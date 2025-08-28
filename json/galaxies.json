@@ -1,0 +1,506 @@
+[
+  {
+    "id": 1,
+    "name": "Milky Way",
+    "type": "spiral",
+    "distance_from_earth": "0 kpc",
+    "mass": "1.5e12 solar masses",
+    "diameter": "105000 light years",
+    "number_of_stars": "250e9",
+    "description": "The Milky Way is a barred spiral galaxy containing our Solar System. It has several spiral arms, a central bulge, and is surrounded by a halo of stars and globular clusters. Its supermassive black hole, Sagittarius A*, lies at its center. The galaxy is about 13.6 billion years old."
+  },
+  {
+    "id": 2,
+    "name": "Andromeda Galaxy",
+    "type": "spiral",
+    "distance_from_earth": "780 kpc",
+    "mass": "1.23e12 solar masses",
+    "diameter": "220000 light years",
+    "number_of_stars": "1 trillion",
+    "description": "The Andromeda Galaxy, also known as M31, is the nearest spiral galaxy to the Milky Way. It features a prominent central bulge and two massive spiral arms. Andromeda is on a collision course with the Milky Way, expected in about 4.5 billion years."
+  },
+  {
+    "id": 3,
+    "name": "Triangulum Galaxy",
+    "type": "spiral",
+    "distance_from_earth": "860 kpc",
+    "mass": "5e10 solar masses",
+    "diameter": "60000 light years",
+    "number_of_stars": "40 billion",
+    "description": "The Triangulum Galaxy, or M33, is a member of the Local Group along with the Milky Way and Andromeda. It is a relatively small spiral galaxy with loosely wound arms and prominent H II regions indicating active star formation."
+  },
+  {
+    "id": 4,
+    "name": "Messier 87",
+    "type": "elliptical",
+    "distance_from_earth": "16.4 Mpc",
+    "mass": "2.7e12 solar masses",
+    "diameter": "120000 light years",
+    "number_of_stars": "6 trillion",
+    "description": "Messier 87 (M87) is a supergiant elliptical galaxy in the Virgo Cluster. It contains a massive black hole at its center, famously imaged by the Event Horizon Telescope. M87 has a large population of globular clusters and a prominent relativistic jet extending thousands of light years."
+  },
+  {
+    "id": 5,
+    "name": "NGC 1300",
+    "type": "barred spiral",
+    "distance_from_earth": "20.7 Mpc",
+    "mass": "1e11 solar masses",
+    "diameter": "110000 light years",
+    "number_of_stars": "100 billion",
+    "description": "NGC 1300 is a classic barred spiral galaxy with a well-defined central bar and symmetrical spiral arms. Its central region features star-forming clusters and a dense core, illustrating the dynamics of barred spirals."
+  },
+  {
+    "id": 6,
+    "name": "Sombrero Galaxy",
+    "type": "spiral",
+    "distance_from_earth": "9.55 Mpc",
+    "mass": "8e11 solar masses",
+    "diameter": "49000 light years",
+    "number_of_stars": "800 billion",
+    "description": "The Sombrero Galaxy (M104) is notable for its bright nucleus and large central bulge, as well as a prominent dust lane encircling the galaxy. It is an unbarred spiral with characteristics of both elliptical and spiral galaxies."
+  },
+  {
+    "id": 7,
+    "name": "Messier 81",
+    "type": "spiral",
+    "distance_from_earth": "3.63 Mpc",
+    "mass": "7e11 solar masses",
+    "diameter": "90000 light years",
+    "number_of_stars": "250 billion",
+    "description": "M81 is a grand design spiral galaxy with tightly wound arms and a large, bright bulge. It hosts an active galactic nucleus and several satellite galaxies. Its structured spiral arms are sites of active star formation."
+  },
+  {
+    "id": 8,
+    "name": "NGC 4414",
+    "type": "spiral",
+    "distance_from_earth": "19.1 Mpc",
+    "mass": "5e10 solar masses",
+    "diameter": "50000 light years",
+    "number_of_stars": "40 billion",
+    "description": "NGC 4414 is a flocculent spiral galaxy known for its loosely wound, patchy spiral arms. The galaxy displays vigorous star formation in its arms and is often studied to understand spiral structure formation without prominent density waves."
+  },
+  {
+    "id": 9,
+    "name": "NGC 5128",
+    "type": "lenticular",
+    "distance_from_earth": "3.8 Mpc",
+    "mass": "1e11 solar masses",
+    "diameter": "60000 light years",
+    "number_of_stars": "100 billion",
+    "description": "NGC 5128, also known as Centaurus A, is a lenticular galaxy with a prominent dust lane crossing its bright central region. It is one of the closest active galaxies and hosts a supermassive black hole that powers its strong radio emission."
+  },
+  {
+    "id": 10,
+    "name": "Messier 94",
+    "type": "spiral",
+    "distance_from_earth": "4.66 Mpc",
+    "mass": "2e10 solar masses",
+    "diameter": "32000 light years",
+    "number_of_stars": "30 billion",
+    "description": "Messier 94 is a spiral galaxy notable for its bright inner ring of star formation surrounding a dense nucleus. The galaxy's outer disk is faint, and it features a combination of tightly wound arms and diffuse outer regions."
+  },
+  {
+    "id": 11,
+    "name": "Messier 51",
+    "type": "spiral",
+    "distance_from_earth": "8.6 Mpc",
+    "mass": "1.6e11 solar masses",
+    "diameter": "60000 light years",
+    "number_of_stars": "160 billion",
+    "description": "Messier 51, also known as the Whirlpool Galaxy, is a classic grand-design spiral galaxy interacting with its companion NGC 5195. Its well-defined spiral arms contain numerous star-forming regions and dust lanes, making it an iconic target for observation."
+  },
+  {
+    "id": 12,
+    "name": "Messier 82",
+    "type": "starburst",
+    "distance_from_earth": "3.5 Mpc",
+    "mass": "1e11 solar masses",
+    "diameter": "37000 light years",
+    "number_of_stars": "100 billion",
+    "description": "Messier 82, or the Cigar Galaxy, is a starburst galaxy undergoing intense star formation triggered by gravitational interactions with its neighbor, M81. Its elongated shape and strong infrared emission make it a prime example of a starburst system."
+  },
+  {
+    "id": 13,
+    "name": "NGC 6744",
+    "type": "spiral",
+    "distance_from_earth": "30 Mly",
+    "mass": "2e11 solar masses",
+    "diameter": "175000 light years",
+    "number_of_stars": "250 billion",
+    "description": "NGC 6744 is a large spiral galaxy often compared to the Milky Way due to its similar structure. It has a prominent central bulge, multiple spiral arms, and active star-forming regions in its outer disk."
+  },
+  {
+    "id": 14,
+    "name": "NGC 4038",
+    "type": "irregular",
+    "distance_from_earth": "22 Mpc",
+    "mass": "1.5e10 solar masses",
+    "diameter": "60000 light years",
+    "number_of_stars": "15 billion",
+    "description": "NGC 4038, part of the Antennae Galaxies, is an irregular galaxy involved in a collision with NGC 4039. The interaction produces spectacular starburst regions and tidal tails, making it an archetype of galaxy mergers and evolution."
+  },
+  {
+    "id": 15,
+    "name": "NGC 1365",
+    "type": "barred spiral",
+    "distance_from_earth": "18.1 Mpc",
+    "mass": "1.3e11 solar masses",
+    "diameter": "110000 light years",
+    "number_of_stars": "120 billion",
+    "description": "NGC 1365 is a prominent barred spiral galaxy with an extended central bar and well-defined spiral arms. Its bar channels gas toward the nucleus, fueling star formation and possibly feeding its central supermassive black hole."
+  },
+  {
+    "id": 16,
+    "name": "NGC 253",
+    "type": "spiral",
+    "distance_from_earth": "3.5 Mpc",
+    "mass": "4e10 solar masses",
+    "diameter": "70000 light years",
+    "number_of_stars": "50 billion",
+    "description": "NGC 253, also known as the Sculptor Galaxy, is a bright spiral galaxy exhibiting strong starburst activity in its core. Its prominent dust lanes and vigorous star-forming regions make it one of the closest examples of an active spiral galaxy."
+  },
+  {
+    "id": 17,
+    "name": "Messier 64",
+    "type": "spiral",
+    "distance_from_earth": "17 Mly",
+    "mass": "4e10 solar masses",
+    "diameter": "50000 light years",
+    "number_of_stars": "40 billion",
+    "description": "Messier 64, the Black Eye Galaxy, features a distinctive dark dust lane obscuring its central bulge. It exhibits a counter-rotating outer gas disk, likely due to a past merger with a smaller galaxy."
+  },
+  {
+    "id": 18,
+    "name": "NGC 488",
+    "type": "spiral",
+    "distance_from_earth": "98 Mly",
+    "mass": "1.1e11 solar masses",
+    "diameter": "130000 light years",
+    "number_of_stars": "100 billion",
+    "description": "NGC 488 is a nearly face-on spiral galaxy known for its tightly wound, symmetric spiral arms. Its well-defined structure and abundant star clusters make it a textbook example of a grand-design spiral."
+  },
+  {
+    "id": 19,
+    "name": "NGC 3628",
+    "type": "spiral",
+    "distance_from_earth": "35 Mly",
+    "mass": "8e10 solar masses",
+    "diameter": "100000 light years",
+    "number_of_stars": "80 billion",
+    "description": "NGC 3628, also called the Hamburger Galaxy, is an edge-on spiral galaxy with a prominent dust lane. It is part of the Leo Triplet and exhibits tidal interactions that create streams of stars and gas extending from its disk."
+  },
+  {
+    "id": 20,
+    "name": "Messier 106",
+    "type": "spiral",
+    "distance_from_earth": "22.6 Mly",
+    "mass": "1e11 solar masses",
+    "diameter": "135000 light years",
+    "number_of_stars": "100 billion",
+    "description": "Messier 106 is a spiral galaxy with an active nucleus classified as a Seyfert galaxy. It has asymmetric spiral arms and extensive emission from gas jets, making it an important target for studying the interplay between star formation and nuclear activity."
+  },
+  {
+    "id": 21,
+    "name": "NGC 2903",
+    "type": "barred spiral",
+    "distance_from_earth": "30 Mly",
+    "mass": "1.2e11 solar masses",
+    "diameter": "90000 light years",
+    "number_of_stars": "120 billion",
+    "description": "NGC 2903 is a barred spiral galaxy with a prominent central bar and well-defined spiral arms. The galaxy exhibits active star-forming regions and a dense nucleus with a rich population of star clusters."
+  },
+  {
+    "id": 22,
+    "name": "NGC 4631",
+    "type": "spiral",
+    "distance_from_earth": "25 Mly",
+    "mass": "8e10 solar masses",
+    "diameter": "110000 light years",
+    "number_of_stars": "90 billion",
+    "description": "NGC 4631, known as the Whale Galaxy, is an edge-on spiral galaxy with a warped disk and strong starburst activity in its central regions. It is interacting with nearby dwarf companions, creating tidal streams and enhancing star formation."
+  },
+  {
+    "id": 23,
+    "name": "NGC 6946",
+    "type": "spiral",
+    "distance_from_earth": "7.72 Mpc",
+    "mass": "1e11 solar masses",
+    "diameter": "40000 light years",
+    "number_of_stars": "50 billion",
+    "description": "NGC 6946, called the Fireworks Galaxy, is a face-on spiral galaxy known for its prolific supernova activity. Its loosely wound spiral arms and rich H II regions make it an excellent site for studying star formation."
+  },
+  {
+    "id": 24,
+    "name": "Messier 63",
+    "type": "spiral",
+    "distance_from_earth": "8.9 Mly",
+    "mass": "8e10 solar masses",
+    "diameter": "50000 light years",
+    "number_of_stars": "40 billion",
+    "description": "Messier 63, the Sunflower Galaxy, is a spiral galaxy with tightly wound arms and a bright central bulge. Its outer disk is rich with neutral hydrogen, and it features stellar streams likely caused by interactions with smaller satellite galaxies."
+  },
+  {
+    "id": 25,
+    "name": "NGC 7331",
+    "type": "spiral",
+    "distance_from_earth": "14.5 Mpc",
+    "mass": "1.1e11 solar masses",
+    "diameter": "110000 light years",
+    "number_of_stars": "90 billion",
+    "description": "NGC 7331 is a spiral galaxy similar in structure to the Milky Way, with a bright bulge, multiple spiral arms, and extensive star formation in its disk. It serves as a prototype for studying galactic dynamics."
+  },
+  {
+    "id": 26,
+    "name": "NGC 2535",
+    "type": "spiral",
+    "distance_from_earth": "110 Mly",
+    "mass": "6e10 solar masses",
+    "diameter": "70000 light years",
+    "number_of_stars": "50 billion",
+    "description": "NGC 2535 is an interacting spiral galaxy with distorted arms due to gravitational influence from its companion NGC 2536. Its tidal features and star-forming regions illustrate the effects of galaxy interactions."
+  },
+  {
+    "id": 27,
+    "name": "NGC 1512",
+    "type": "barred spiral",
+    "distance_from_earth": "38 Mly",
+    "mass": "7e10 solar masses",
+    "diameter": "90000 light years",
+    "number_of_stars": "60 billion",
+    "description": "NGC 1512 is a barred spiral galaxy with a prominent central bar and an inner ring of star formation. Its outer spiral arms are faint and extended, hosting regions of young, massive stars."
+  },
+  {
+    "id": 28,
+    "name": "NGC 2997",
+    "type": "spiral",
+    "distance_from_earth": "40 Mly",
+    "mass": "9e10 solar masses",
+    "diameter": "85000 light years",
+    "number_of_stars": "75 billion",
+    "description": "NGC 2997 is a grand-design spiral galaxy with well-defined, symmetrical arms and a bright nucleus. Its arms contain numerous H II regions, indicating ongoing star formation across the disk."
+  },
+  {
+    "id": 29,
+    "name": "Messier 101",
+    "type": "spiral",
+    "distance_from_earth": "21 Mly",
+    "mass": "1.5e11 solar masses",
+    "diameter": "170000 light years",
+    "number_of_stars": "200 billion",
+    "description": "Messier 101, the Pinwheel Galaxy, is a face-on spiral galaxy with loosely wound, prominent arms. Its disk contains numerous star-forming regions, and it hosts several satellite dwarf galaxies interacting with its outer regions."
+  },
+  {
+    "id": 30,
+    "name": "NGC 4565",
+    "type": "spiral",
+    "distance_from_earth": "30 Mly",
+    "mass": "1.1e11 solar masses",
+    "diameter": "120000 light years",
+    "number_of_stars": "100 billion",
+    "description": "NGC 4565, the Needle Galaxy, is an edge-on spiral galaxy notable for its thin, elongated profile. Its central bulge is bright, and the disk shows extensive dust lanes, providing an excellent view of galactic structure edge-on."
+  },
+  {
+    "id": 31,
+    "name": "NGC 772",
+    "type": "spiral",
+    "distance_from_earth": "130 Mly",
+    "mass": "1e11 solar masses",
+    "diameter": "110000 light years",
+    "number_of_stars": "90 billion",
+    "description": "NGC 772 is an unbarred spiral galaxy with a dominant single spiral arm, possibly influenced by interactions with a nearby dwarf galaxy. Its asymmetric structure and bright star-forming regions make it a fascinating object for studying tidal effects."
+  },
+  {
+    "id": 32,
+    "name": "NGC 6741",
+    "type": "elliptical",
+    "distance_from_earth": "250 Mly",
+    "mass": "3e11 solar masses",
+    "diameter": "90000 light years",
+    "number_of_stars": "200 billion",
+    "description": "NGC 6741 is an elliptical galaxy exhibiting a smooth, featureless light profile typical of elliptical systems. It is dominated by older, red stars, with very little ongoing star formation and a dense central stellar population."
+  },
+  {
+    "id": 33,
+    "name": "NGC 5055",
+    "type": "spiral",
+    "distance_from_earth": "7.9 Mpc",
+    "mass": "1e11 solar masses",
+    "diameter": "170000 light years",
+    "number_of_stars": "150 billion",
+    "description": "NGC 5055, also called the Sunflower Spiral Galaxy, is a nearly face-on spiral galaxy with extended arms and significant star formation. Its disk shows a flocculent structure, and the nucleus is relatively quiet compared to star-forming regions."
+  },
+  {
+    "id": 34,
+    "name": "NGC 3521",
+    "type": "spiral",
+    "distance_from_earth": "26.6 Mly",
+    "mass": "8e10 solar masses",
+    "diameter": "90000 light years",
+    "number_of_stars": "70 billion",
+    "description": "NGC 3521 is a spiral galaxy with loosely wound, patchy arms and a bright bulge. It contains extensive dust lanes and numerous H II regions, showcasing active star formation in its spiral arms."
+  },
+  {
+    "id": 35,
+    "name": "NGC 7332",
+    "type": "lenticular",
+    "distance_from_earth": "40 Mly",
+    "mass": "6e10 solar masses",
+    "diameter": "60000 light years",
+    "number_of_stars": "50 billion",
+    "description": "NGC 7332 is a lenticular galaxy characterized by a smooth disk and a small central bulge. It exhibits minimal star formation and is often studied as a transitional type between spiral and elliptical galaxies."
+  },
+  {
+    "id": 36,
+    "name": "NGC 1023",
+    "type": "lenticular",
+    "distance_from_earth": "11.1 Mpc",
+    "mass": "5e10 solar masses",
+    "diameter": "70000 light years",
+    "number_of_stars": "45 billion",
+    "description": "NGC 1023 is a lenticular galaxy with a bright central bulge and a diffuse disk. It is the dominant member of a galaxy group, showing signs of past minor mergers and containing numerous globular clusters."
+  },
+  {
+    "id": 37,
+    "name": "Messier 105",
+    "type": "elliptical",
+    "distance_from_earth": "10 Mly",
+    "mass": "8e10 solar masses",
+    "diameter": "50000 light years",
+    "number_of_stars": "60 billion",
+    "description": "Messier 105 is a nearly spherical elliptical galaxy in the Leo I Group. It is dominated by older, red stars, with very little gas or dust, making it typical of early-type elliptical galaxies."
+  },
+  {
+    "id": 38,
+    "name": "NGC 4214",
+    "type": "irregular",
+    "distance_from_earth": "10.9 Mly",
+    "mass": "1.5e9 solar masses",
+    "diameter": "9000 light years",
+    "number_of_stars": "2 billion",
+    "description": "NGC 4214 is a dwarf irregular galaxy undergoing vigorous star formation. It hosts young massive clusters, nebulae, and supernova remnants, making it an excellent laboratory for studying stellar evolution in small galaxies."
+  },
+  {
+    "id": 39,
+    "name": "NGC 4449",
+    "type": "irregular",
+    "distance_from_earth": "12.5 Mly",
+    "mass": "4e9 solar masses",
+    "diameter": "13000 light years",
+    "number_of_stars": "5 billion",
+    "description": "NGC 4449 is a starburst irregular galaxy with active star-forming regions and a complex structure. Its morphology is shaped by interactions with nearby dwarf galaxies, producing tidal features and stellar streams."
+  },
+  {
+    "id": 40,
+    "name": "NGC 3077",
+    "type": "irregular",
+    "distance_from_earth": "12 Mly",
+    "mass": "2e9 solar masses",
+    "diameter": "10000 light years",
+    "number_of_stars": "3 billion",
+    "description": "NGC 3077 is an irregular galaxy in the M81 Group, heavily influenced by gravitational interactions with its neighbors M81 and M82. These interactions trigger star formation and distort its otherwise compact structure."
+  },
+  {
+    "id": 41,
+    "name": "NGC 55",
+    "type": "irregular",
+    "distance_from_earth": "6.5 Mly",
+    "mass": "2.5e9 solar masses",
+    "diameter": "7000 light years",
+    "number_of_stars": "3 billion",
+    "description": "NGC 55 is a barred irregular galaxy in the Sculptor Group. Its elongated shape and irregular star-forming regions indicate past interactions, and it contains numerous H II regions and young star clusters."
+  },
+  {
+    "id": 42,
+    "name": "NGC 300",
+    "type": "spiral",
+    "distance_from_earth": "6.07 Mly",
+    "mass": "3e10 solar masses",
+    "diameter": "60000 light years",
+    "number_of_stars": "30 billion",
+    "description": "NGC 300 is a spiral galaxy in the Sculptor Group, exhibiting loosely wound arms and active star formation. Its disk is rich in young stars and nebulae, making it a prime target for studying stellar populations in nearby spirals."
+  },
+  {
+    "id": 43,
+    "name": "NGC 3109",
+    "type": "irregular",
+    "distance_from_earth": "4.3 Mly",
+    "mass": "1.6e9 solar masses",
+    "diameter": "10000 light years",
+    "number_of_stars": "2 billion",
+    "description": "NGC 3109 is a dwarf irregular galaxy on the outskirts of the Local Group. It has a highly elongated structure with ongoing star formation, providing insight into the evolution of small, low-mass galaxies."
+  },
+  {
+    "id": 44,
+    "name": "IC 10",
+    "type": "irregular",
+    "distance_from_earth": "2.2 Mly",
+    "mass": "1.2e9 solar masses",
+    "diameter": "8000 light years",
+    "number_of_stars": "1.5 billion",
+    "description": "IC 10 is a starburst dwarf irregular galaxy in the Local Group. It is rich in gas and dust, undergoing intense star formation, and contains numerous Wolf-Rayet stars, making it a unique laboratory for studying massive stellar evolution."
+  },
+  {
+    "id": 45,
+    "name": "NGC 6822",
+    "type": "irregular",
+    "distance_from_earth": "1.63 Mly",
+    "mass": "1e9 solar masses",
+    "diameter": "7500 light years",
+    "number_of_stars": "1.2 billion",
+    "description": "NGC 6822, also called Barnard's Galaxy, is a dwarf irregular in the Local Group. It has extensive star-forming regions, young stellar clusters, and complex gas clouds, providing important insights into the chemical evolution of small galaxies."
+  },
+  {
+    "id": 46,
+    "name": "Messier 59",
+    "type": "elliptical",
+    "distance_from_earth": "60 Mly",
+    "mass": "5e10 solar masses",
+    "diameter": "42000 light years",
+    "number_of_stars": "50 billion",
+    "description": "Messier 59 is an elliptical galaxy in the Virgo Cluster. Its smooth, featureless light profile consists mostly of older stars, and it shows little gas or dust, representing a typical early-type galaxy."
+  },
+  {
+    "id": 47,
+    "name": "Messier 60",
+    "type": "elliptical",
+    "distance_from_earth": "55 Mly",
+    "mass": "1.2e11 solar masses",
+    "diameter": "120000 light years",
+    "number_of_stars": "200 billion",
+    "description": "Messier 60 is a massive elliptical galaxy in the Virgo Cluster, hosting a dense population of old stars. Its halo contains numerous globular clusters, and it has a central supermassive black hole contributing to its dynamic core."
+  },
+  {
+    "id": 48,
+    "name": "NGC 3370",
+    "type": "spiral",
+    "distance_from_earth": "98 Mly",
+    "mass": "9e10 solar masses",
+    "diameter": "60000 light years",
+    "number_of_stars": "80 billion",
+    "description": "NGC 3370 is a face-on spiral galaxy with tightly wound arms and a bright central bulge. It is notable for hosting Type Ia supernovae, making it important for measuring cosmic distances and calibrating the Hubble constant."
+  },
+  {
+    "id": 49,
+    "name": "NGC 4622",
+    "type": "spiral",
+    "distance_from_earth": "111 Mly",
+    "mass": "1.1e11 solar masses",
+    "diameter": "105000 light years",
+    "number_of_stars": "100 billion",
+    "description": "NGC 4622 is a peculiar spiral galaxy with leading spiral arms, contrary to typical rotation patterns. Its unusual structure provides insight into galactic dynamics and past interactions."
+  },
+  {
+    "id": 50,
+    "name": "NGC 6745",
+    "type": "irregular",
+    "distance_from_earth": "206 Mly",
+    "mass": "2e11 solar masses",
+    "diameter": "150000 light years",
+    "number_of_stars": "150 billion",
+    "description": "NGC 6745 is an irregular galaxy undergoing a violent interaction with a smaller companion. The collision produces distorted structures, tidal tails, and intense starburst regions, offering a dramatic example of galaxy mergers."
+  }
+]
+
+
+
+

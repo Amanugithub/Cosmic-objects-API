@@ -1,0 +1,307 @@
+[
+  {
+    "id": 1,
+    "name": "Cygnus X-1",
+    "type": "stellar-mass",
+    "mass": "21.2 M☉",
+    "distance_from_earth": "6070 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "Cygnus X-1 is one of the first black holes discovered and is a well-known stellar-mass black hole in the Milky Way. It accretes matter from a blue supergiant companion, emitting strong X-rays. Its study has helped confirm the existence of black holes and measure properties of stellar evolution."
+  },
+  {
+    "id": 2,
+    "name": "Sagittarius A*",
+    "type": "supermassive",
+    "mass": "4.3 × 10^6 M☉",
+    "distance_from_earth": "26000 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "orbital motion of stars",
+    "description": "Sagittarius A* is the supermassive black hole at the center of the Milky Way. It influences the orbits of nearby stars and emits radio waves from its accretion disk. Its presence is key to understanding galaxy formation and dynamics."
+  },
+  {
+    "id": 3,
+    "name": "M87*",
+    "type": "supermassive",
+    "mass": "6.5 × 10^9 M☉",
+    "distance_from_earth": "16.4 megaparsecs",
+    "host_galaxy": "Messier 87",
+    "discovery_method": "orbital motion and radio imaging",
+    "description": "M87* is the supermassive black hole at the center of galaxy M87. It was the first black hole ever imaged by the Event Horizon Telescope. M87* drives a relativistic jet extending thousands of light-years, providing insight into black hole physics and jet formation."
+  },
+  {
+    "id": 4,
+    "name": "LIGO GW150914",
+    "type": "stellar-mass",
+    "mass": "62 M☉",
+    "distance_from_earth": "410 megaparsecs",
+    "host_galaxy": "Unidentified",
+    "discovery_method": "gravitational waves",
+    "description": "GW150914 is a stellar-mass black hole binary detected through gravitational waves by LIGO in 2015. It marked the first direct detection of gravitational waves and confirmed Einstein's prediction. The merger released energy equivalent to about three solar masses in gravitational waves."
+  },
+  {
+    "id": 5,
+    "name": "V404 Cygni",
+    "type": "stellar-mass",
+    "mass": "9 M☉",
+    "distance_from_earth": "7800 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "V404 Cygni is a binary system containing a stellar-mass black hole that accretes matter from a companion star. Known for its dramatic X-ray outbursts, it provides insight into black hole accretion physics and variability."
+  },
+  {
+    "id": 6,
+    "name": "NGC 1277 Black Hole",
+    "type": "supermassive",
+    "mass": "1.7 × 10^10 M☉",
+    "distance_from_earth": "73 megaparsecs",
+    "host_galaxy": "NGC 1277",
+    "discovery_method": "stellar dynamics",
+    "description": "The black hole in NGC 1277 is one of the most massive known, containing about 17 billion solar masses. Its enormous mass relative to its host galaxy challenges models of galaxy evolution and black hole growth."
+  },
+  {
+    "id": 7,
+    "name": "A0620-00",
+    "type": "stellar-mass",
+    "mass": "6.6 M☉",
+    "distance_from_earth": "3300 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "A0620-00 is a binary system with a stellar-mass black hole. Its discovery via X-ray emissions from accretion onto the black hole helped improve understanding of stellar black hole populations and accretion physics."
+  },
+  {
+    "id": 8,
+    "name": "GRO J1655-40",
+    "type": "stellar-mass",
+    "mass": "6.3 M☉",
+    "distance_from_earth": "11,000 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "GRO J1655-40 is a well-studied stellar-mass black hole in a binary system. Notable for relativistic jets and strong X-ray variability, it provides key evidence for accretion disk theory and black hole spin measurements."
+  },
+  {
+    "id": 9,
+    "name": "Ton 618",
+    "type": "supermassive",
+    "mass": "6.6 × 10^10 M☉",
+    "distance_from_earth": "10.37 billion light years",
+    "host_galaxy": "Ton 618 quasar host",
+    "discovery_method": "quasar luminosity and spectral analysis",
+    "description": "Ton 618 is an ultramassive black hole powering a distant quasar. Its extreme mass makes it one of the largest known black holes, providing important insights into early universe black hole formation and quasar physics."
+  },
+  {
+    "id": 10,
+    "name": "XTE J1550-564",
+    "type": "stellar-mass",
+    "mass": "10.5 M☉",
+    "distance_from_earth": "17,000 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "XTE J1550-564 is a stellar-mass black hole in a binary system. Its episodic X-ray outbursts and observed relativistic jets make it a valuable laboratory for studying accretion processes and jet formation in black holes."
+  },
+  {
+    "id": 11,
+    "name": "NGC 4395*",
+    "type": "intermediate-mass",
+    "mass": "30000 M☉",
+    "distance_from_earth": "4.3 megaparsecs",
+    "host_galaxy": "NGC 4395",
+    "discovery_method": "stellar dynamics and X-ray observation",
+    "description": "NGC 4395* is an intermediate-mass black hole in a small spiral galaxy. Its relatively low mass for a galactic nucleus makes it a key object for studying the formation and growth of black holes in low-mass galaxies."
+  },
+  {
+    "id": 12,
+    "name": "IC 10 X-1",
+    "type": "stellar-mass",
+    "mass": "23 M☉",
+    "distance_from_earth": "660,000 light years",
+    "host_galaxy": "IC 10",
+    "discovery_method": "X-ray observation",
+    "description": "IC 10 X-1 is one of the most massive known stellar black holes in a binary system. Accreting matter from its Wolf-Rayet star companion, it is an important target for studying black hole formation in low-metallicity environments."
+  },
+  {
+    "id": 13,
+    "name": "HLX-1",
+    "type": "intermediate-mass",
+    "mass": "20000 M☉",
+    "distance_from_earth": "290 megaparsecs",
+    "host_galaxy": "ESO 243-49",
+    "discovery_method": "X-ray observation",
+    "description": "HLX-1 is an intermediate-mass black hole located in the outskirts of ESO 243-49. It produces ultraluminous X-ray emissions and is one of the strongest candidates for an intermediate-mass black hole, bridging the gap between stellar and supermassive black holes."
+  },
+  {
+    "id": 14,
+    "name": "GRO J0422+32",
+    "type": "stellar-mass",
+    "mass": "3.97 M☉",
+    "distance_from_earth": "7800 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "GRO J0422+32 is a low-mass stellar black hole in a binary system. Its detection through X-ray outbursts provides insight into the lower mass limit for stellar black holes and the evolution of compact binaries."
+  },
+  {
+    "id": 15,
+    "name": "PG 1302-102",
+    "type": "supermassive",
+    "mass": "1000000000 M☉",
+    "distance_from_earth": "3.5 billion light years",
+    "host_galaxy": "PG 1302-102 quasar host",
+    "discovery_method": "optical variability of quasar",
+    "description": "PG 1302-102 hosts a supermassive black hole at the center of a quasar. Its periodic optical variability suggests a binary supermassive black hole system, offering important constraints on black hole mergers and gravitational wave predictions in galactic centers."
+  },
+  {
+    "id": 16,
+    "name": "Cygnus X-3",
+    "type": "stellar-mass",
+    "mass": "10 M☉",
+    "distance_from_earth": "23,000 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "Cygnus X-3 is a high-mass X-ray binary containing a stellar-mass black hole. It exhibits strong X-ray and radio emissions and is notable for its relativistic jets, providing a laboratory for studying accretion and jet physics in black hole binaries."
+  },
+  {
+    "id": 17,
+    "name": "XTE J1817-330",
+    "type": "stellar-mass",
+    "mass": "6 M☉",
+    "distance_from_earth": "10,000 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "XTE J1817-330 is a stellar-mass black hole in a binary system. Detected through its X-ray outbursts, it helps astronomers study accretion dynamics and black hole spin in relatively low-mass systems."
+  },
+  {
+    "id": 18,
+    "name": "S5 0014+81",
+    "type": "supermassive",
+    "mass": "40000000000 M☉",
+    "distance_from_earth": "12.1 billion light years",
+    "host_galaxy": "S5 0014+81 quasar host",
+    "discovery_method": "quasar luminosity and spectral analysis",
+    "description": "S5 0014+81 is one of the most massive known supermassive black holes, powering a distant quasar. Its extreme mass and luminosity provide insight into early universe black hole formation and the growth of massive quasars."
+  },
+  {
+    "id": 19,
+    "name": "GRO J1009-45",
+    "type": "stellar-mass",
+    "mass": "5.8 M☉",
+    "distance_from_earth": "9,500 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "GRO J1009-45 is a stellar-mass black hole in a binary system. Its study through X-ray emission patterns and outbursts improves understanding of mass transfer, accretion, and the properties of low-mass stellar black holes."
+  },
+  {
+    "id": 20,
+    "name": "H1821+643",
+    "type": "supermassive",
+    "mass": "3000000000 M☉",
+    "distance_from_earth": "3.9 billion light years",
+    "host_galaxy": "H1821+643 quasar host",
+    "discovery_method": "quasar spectral analysis",
+    "description": "H1821+643 is a supermassive black hole at the center of a quasar in a galaxy cluster. Its study helps understand the co-evolution of supermassive black holes and galaxy clusters, as well as quasar energy output and accretion mechanisms."
+  },
+  {
+    "id": 21,
+    "name": "LMC X-1",
+    "type": "stellar-mass",
+    "mass": "10.9 M☉",
+    "distance_from_earth": "163,000 light years",
+    "host_galaxy": "Large Magellanic Cloud",
+    "discovery_method": "X-ray observation",
+    "description": "LMC X-1 is a stellar-mass black hole in a binary system located in the Large Magellanic Cloud. It is one of the brightest X-ray sources known and helps astronomers study black hole accretion in nearby galaxies."
+  },
+  {
+    "id": 22,
+    "name": "XTE J1118+480",
+    "type": "stellar-mass",
+    "mass": "7.5 M☉",
+    "distance_from_earth": "6,000 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "XTE J1118+480 is a binary system with a stellar-mass black hole. Its proximity and X-ray variability make it a key target for studying accretion processes and black hole jet formation."
+  },
+  {
+    "id": 23,
+    "name": "NGC 1600*",
+    "type": "supermassive",
+    "mass": "17000000000 M☉",
+    "distance_from_earth": "64 megaparsecs",
+    "host_galaxy": "NGC 1600",
+    "discovery_method": "stellar dynamics",
+    "description": "The central black hole in NGC 1600 is ultramassive, containing around 17 billion solar masses. It challenges existing models of galaxy-black hole co-evolution and provides insights into the formation of massive galaxies."
+  },
+  {
+    "id": 24,
+    "name": "GS 2023+338",
+    "type": "stellar-mass",
+    "mass": "9 M☉",
+    "distance_from_earth": "7,800 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "Also known as V404 Cygni, GS 2023+338 is a well-studied stellar-mass black hole binary. Its violent X-ray outbursts provide valuable data on accretion physics and black hole variability."
+  },
+  {
+    "id": 25,
+    "name": "4U 1543-47",
+    "type": "stellar-mass",
+    "mass": "9.4 M☉",
+    "distance_from_earth": "17,000 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "4U 1543-47 is a transient X-ray binary with a stellar-mass black hole. Observations of its outbursts contribute to understanding accretion disk instabilities and black hole spin dynamics."
+  },
+  {
+    "id": 26,
+    "name": "GRO J1655-40",
+    "type": "stellar-mass",
+    "mass": "6.3 M☉",
+    "distance_from_earth": "11,000 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "GRO J1655-40 is a stellar-mass black hole in a binary system, notable for its relativistic jets and X-ray variability. It provides important observational evidence for accretion physics and black hole spin measurement."
+  },
+  {
+    "id": 27,
+    "name": "Swift J1753.5-0127",
+    "type": "stellar-mass",
+    "mass": "5.4 M☉",
+    "distance_from_earth": "8,000 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "Swift J1753.5-0127 is a low-mass X-ray binary containing a stellar-mass black hole. Its long-lasting X-ray activity makes it a prime candidate for studying black hole accretion and jet formation over extended periods."
+  },
+  {
+    "id": 28,
+    "name": "NGC 4486B*",
+    "type": "supermassive",
+    "mass": "600000000 M☉",
+    "distance_from_earth": "16.5 megaparsecs",
+    "host_galaxy": "NGC 4486B",
+    "discovery_method": "stellar dynamics",
+    "description": "NGC 4486B* is a supermassive black hole at the center of a compact elliptical galaxy. It offers insights into black hole scaling relations in small galaxies and the dynamics of dense stellar environments."
+  },
+  {
+    "id": 29,
+    "name": "MAXI J1820+070",
+    "type": "stellar-mass",
+    "mass": "8.0 M☉",
+    "distance_from_earth": "10,000 light years",
+    "host_galaxy": "Milky Way",
+    "discovery_method": "X-ray observation",
+    "description": "MAXI J1820+070 is a recently discovered stellar-mass black hole in a binary system. Its bright X-ray outbursts and relativistic jets provide a unique opportunity to study accretion physics in real time."
+  },
+  {
+    "id": 30,
+    "name": "PKS 0438-436",
+    "type": "supermassive",
+    "mass": "23000000000 M☉",
+    "distance_from_earth": "12 billion light years",
+    "host_galaxy": "PKS 0438-436 quasar host",
+    "discovery_method": "quasar spectral analysis",
+    "description": "PKS 0438-436 is a supermassive black hole powering a bright quasar in the early universe. Its extreme mass and luminosity provide crucial data for understanding black hole growth and quasar activity at high redshifts."
+  }
+]
+
+
+
+
+
