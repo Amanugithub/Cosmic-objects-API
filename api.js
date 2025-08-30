@@ -47,6 +47,13 @@ function generateRandomObject(obj){
     randomObject.category = keys[randomKey]; 
     return randomObject;
 }
+function handlePagination(page,limit,results){
+    const pageNum = parseInt(page);
+    const limitNum = parseInt(limit);
+    const startIndex = (pageNum - 1) * limitNum
+    const endIndex = startIndex + limitNum;
+    return results.slice(startIndex,endIndex)
+}
 const API_URL = "http://localhost:4000"
 
 const app = express();
@@ -60,7 +67,7 @@ app.get("/cosmic-objects/random",(req,res)=>{
 
    const randomObjectToBeSent = generateRandomObject(cosmicData)
    res.json(randomObjectToBeSent)
-   
+
 })
 
 //Get a random object from a specific category
@@ -100,15 +107,7 @@ app.get('/cosmic-objects/filter/:category', (req, res) => {
         if (type && obj.type.toLowerCase() !== type.toLowerCase()) return false;
         return true;
     });
-
-    //paginate the result before sending it
-    const pageNum = parseInt(page);
-    const limitNum = parseInt(limit);
-
-    const startIndex = (pageNum - 1) * limitNum;
-    const endIndex = startIndex + limitNum
-
-    const paginatedResults = results.slice(startIndex, endIndex);
+   const paginatedResults = handlePagination(page,limit,results);
     res.json(paginatedResults);
 });
 
@@ -132,6 +131,17 @@ app.get('/cosmic-objects/:category/:id',(req,res)=>{
     res.json(thatObject);
     })
 
+    //Get all objects of a specific category with pagination
+    app.get('/cosmic-objects/:category',(req,res)=>{
+        const category =req.params.category;
+        const { page = 1 , limit = 10 } = req.query;
+        const dataSet = cosmicData[category];
+        if(!dataSet){
+            return res.status(404).json({error: "category not found."})
+        }
+        const paginatedDataSet = handlePagination(page,limit,dataSet);
+        res.json(paginatedDataSet)
+    })
 
 app.listen(port,()=>{
     console.log(`server is listening on port ${port}...\nclick ${API_URL} to open the browser.` );
