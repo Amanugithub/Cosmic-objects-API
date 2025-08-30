@@ -2,6 +2,7 @@ import express from "express"
 import bodyParser from "body-parser"
 import { readFileSync } from "fs";
 import { isBooleanObject } from "util/types";
+import { type } from "os";
 
 // Load datasets into memory
 const asteroids_comets = JSON.parse(readFileSync("./json/asteroids_comets.json", "utf-8"));
@@ -11,6 +12,22 @@ const galaxies = JSON.parse(readFileSync("./json/galaxies.json", "utf-8"));
 const planets = JSON.parse(readFileSync("./json/planets.json", "utf-8"));
 const stars = JSON.parse(readFileSync("./json/stars.json", "utf-8"));
 
+const typesOfAsteroids_Comets = new Set(asteroids_comets.map(o => o.type));
+const typesOfBlackholes      = new Set(blackholes.map(o => o.type));
+const typesOfConstellations  = new Set(constellations.map(o => o.type));
+const typesOfGalaxies        = new Set(galaxies.map(o => o.type));
+const typesOfPlanets         = new Set(planets.map(o => o.type));
+const typesOfStars           = new Set(stars.map(o => o.type));
+
+const typeSets = {
+    asteroids_comets: typesOfAsteroids_Comets,
+    blackholes: typesOfBlackholes,
+    constellations: typesOfConstellations,
+    galaxies: typesOfGalaxies,
+    planets: typesOfPlanets,
+    stars: typesOfStars
+};
+
 const cosmicData = {
     asteroids_comets : asteroids_comets,
     blackholes : blackholes,
@@ -19,7 +36,17 @@ const cosmicData = {
     planets : planets,
     stars : stars
 }
+/*
 
+*/
+function generateRandomObject(obj){
+    const keys = Object.keys(obj);//array containing the keys of the object
+    const randomKey = Math.trunc(Math.random() * keys.length)//gets a random index from the keys array
+    const randomDataSet = obj[keys[randomKey]];
+    const randomObject = randomDataSet[Math.trunc(Math.random() * randomDataSet.length)]
+    randomObject.category = keys[randomKey]; 
+    return randomObject;
+}
 const API_URL = "http://localhost:4000"
 
 const app = express();
@@ -30,40 +57,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //Get a random cosmic-object from any category
 app.get("/cosmic-objects/random",(req,res)=>{
-    const randomNumber = Math.trunc(Math.random() * 6 + 1 )
-    switch (randomNumber) {
-        case 1:
-            const randomAsteroid = asteroids_comets[Math.trunc(Math.random() * asteroids_comets.length)]
-            randomAsteroid.category = "asteroid/comet"
-            res.json(randomAsteroid)
-            break;
-        case 2:
-            const randomBlackhole = blackholes[Math.trunc(Math.random() * blackholes.length)]
-            randomBlackhole.category = "blackhole"
-            res.json(randomBlackhole)
-            break;
-        case 3:
-            const randomConstellation = constellations[Math.trunc(Math.random() * constellations.length)]
-            randomConstellation.category = "constellation"
-            res.json(randomConstellation)
-            break;
-        case 4:
-            const randomGalaxy = galaxies[Math.trunc(Math.random() * galaxies.length)]
-            randomGalaxy.category = "galaxy"
-            res.json(randomGalaxy)
-            break;
-        case 5:
-            const randomPlanet = planets[Math.trunc(Math.random() * planets.length)]
-            randomPlanet.category = "planet"
-            res.json(randomPlanet)
-            break;
-        case 6:
-            const randomStar = stars[Math.trunc(Math.random() * stars.length)]
-            randomStar.category = "star"
-            res.json(randomStar)
-            break;
-    }
 
+   const randomObjectToBeSent = generateRandomObject(cosmicData)
+   res.json(randomObjectToBeSent)
+   
 })
 
 //Get a random object from a specific category
@@ -72,16 +69,70 @@ app.get('/cosmic-objects/random/:category',(req,res)=>{
     
     const category = req.params.category.toLowerCase();
     const dataSet = cosmicData[category];
-    console.log(dataSet);
     if(!dataSet){
         return res.status(404).json({error: "category not found"})
     }
 
     res.json(dataSet[Math.trunc(Math.random() * dataSet.length)])
 })
+
+    // filter by properties and return and array objects that fulfil that condition
+
+app.get('/cosmic-objects/filter/:category', (req, res) => {
+    const category = req.params.category.toLowerCase();
+    const { type , page = 1 , limit = 10 } = req.query;
+    console.log(type);
+    const dataSet = cosmicData[category];
+    if (!dataSet) {
+        return res.status(404).json({ error: "category not found" });
+    }
+
+    // Check if type is valid for this category
+    if (type) {
+        const validTypes = typeSets[category];
+        if (!validTypes || !validTypes.has(type)) {
+            return res.status(404).json({ error: "unavailable type for this category" });
+        }
+    }
+
+    // Apply filters dynamically
+    let results = dataSet.filter(obj => {
+        if (type && obj.type.toLowerCase() !== type.toLowerCase()) return false;
+        return true;
+    });
+
+    //paginate the result before sending it
+    const pageNum = parseInt(page);
+    const limitNum = parseInt(limit);
+
+    const startIndex = (pageNum - 1) * limitNum;
+    const endIndex = startIndex + limitNum
+
+    const paginatedResults = results.slice(startIndex, endIndex);
+    res.json(paginatedResults);
+});
+
 //Get a specific object by id
 
-//get 
+app.get('/cosmic-objects/:category/:id',(req,res)=>{
+    //catch the parameters
+    const category = req.params.category.toLowerCase();
+    const id = parseInt(req.params.id)
+    console.log(category , id);
+    //select the category
+    const dataSet = cosmicData[category];
+    if (!dataSet){
+        return res.status(404).json({error: "category not found"})
+    }
+    //find the object with the required id in that category
+    const thatObject = dataSet.find(object=> object.id === id);
+    if(!thatObject){
+        return res.status(404).json({error: "object with the specified id not found"})
+    }
+    res.json(thatObject);
+    })
+
+
 app.listen(port,()=>{
     console.log(`server is listening on port ${port}...\nclick ${API_URL} to open the browser.` );
 })
