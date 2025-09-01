@@ -48,8 +48,8 @@ function generateRandomObject(obj){
     return randomObject;
 }
 function handlePagination(page,limit,results){
-    const pageNum = parseInt(page);
-    const limitNum = parseInt(limit);
+    const pageNum = Math.max(1, parseInt(page) || 1);
+    const limitNum = Math.max(1, parseInt(limit) || 10);
     const startIndex = (pageNum - 1) * limitNum
     const endIndex = startIndex + limitNum;
     return results.slice(startIndex,endIndex)
@@ -142,7 +142,38 @@ app.get('/cosmic-objects/:category/:id',(req,res)=>{
         const paginatedDataSet = handlePagination(page,limit,dataSet);
         res.json(paginatedDataSet)
     })
+    //Search by name the entire database for cosmic object that match the provided name
+    app.get('/cosmic-objects',(req,res)=>{
+        const { objectName , category , page = 1 , limit = 10 } = req.query;
+        console.log(objectName,category);
+       
+        if(objectName){
+            if(category){//if category is provided
+    
+                const dataSet = cosmicData[category];//pick the dataSet
+                if(!dataSet)//check if the dataset with the provided category exists
+                    return res.status(404).json({error: "category not found."})
+            
+                 //search from a particular category and collect the matches
+                const matches = dataSet.filter((obj) => {
+                    return obj.name.toLowerCase().includes(objectName.toLowerCase())})
+                res.json(handlePagination(page,limit,matches))
 
+            } else {
+                //search the entire database for matches
+                const matches = [];
+                for (const key in cosmicData){
+                    const results = cosmicData[key].filter((obj) => {
+                        return obj.name.toLowerCase().includes(objectName.toLowerCase())})
+                    matches.push(...results)
+                }
+                res.json(handlePagination(page,limit,matches));
+            }
+
+        } else {
+            res.status(400).json({error: "objectName must be provided"})
+        }
+})
 app.listen(port,()=>{
     console.log(`server is listening on port ${port}...\nclick ${API_URL} to open the browser.` );
 })
