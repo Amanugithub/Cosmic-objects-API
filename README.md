@@ -22,7 +22,7 @@ http://localhost:4000/cosmic-objects/random
  ```
 ### Method: GET
 >```
->undefined
+>http://localhost:4000/cosmic-objects/random
 >```
 ### Response: 200
 <details open style="width: fit-content; max-height: 600px; overflow: auto">
@@ -75,7 +75,7 @@ http://localhost:4000/cosmic-objects/random/{category}
  ```
 ### Method: GET
 >```
->undefined
+>http://localhost:4000/cosmic-objects/random/blackholes
 >```
 ### Response: 200
 <details open style="width: fit-content; max-height: 600px; overflow: auto">
@@ -129,7 +129,7 @@ http://localhost:4000/cosmic-objects/filter/{category}/?type=""&page=""&limit=""
  ```
 ### Method: GET
 >```
->undefined
+>http://localhost:4000/cosmic-objects/filter/stars/?type=Red%20Giant
 >```
 ### Response: 200
 <details open style="width: fit-content; max-height: 600px; overflow: auto">
@@ -177,7 +177,7 @@ http://localhost:4000/cosmic-objects/{category}/id
  ```
 ### Method: GET
 >```
->undefined
+>http://localhost:4000/cosmic-objects/planets/144
 >```
 ### Response: 200
 <details open style="width: fit-content; max-height: 600px; overflow: auto">
@@ -221,7 +221,7 @@ http://localhost:4000/cosmic-objects/{category}?page=""&limit=""
  ```
 ### Method: GET
 >```
->undefined
+>http://localhost:4000/cosmic-objects/constellations?page=1
 >```
 ### Response: 200
 <details open style="width: fit-content; max-height: 600px; overflow: auto">
@@ -428,7 +428,7 @@ http://localhost:4000/cosmic-objects?objectName=""&category=""
  ```
 ### Method: GET
 >```
->undefined
+>http://localhost:4000/cosmic-objects?objectName=halley&category=asteroids_comets
 >```
 ### Response: 200
 <details open style="width: fit-content; max-height: 600px; overflow: auto">
@@ -456,4 +456,3 @@ http://localhost:4000/cosmic-objects?objectName=""&category=""
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 _________________________________________________
-Powered By: [postman-to-markdown](https://github.com/bautistaj/postman-to-markdown/)
