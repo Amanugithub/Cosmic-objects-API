@@ -36,9 +36,7 @@ const cosmicData = {
     planets : planets,
     stars : stars
 }
-/*
 
-*/
 function generateRandomObject(obj){
     const keys = Object.keys(obj);//array containing the keys of the object
     const randomKey = Math.trunc(Math.random() * keys.length)//gets a random index from the keys array
@@ -83,7 +81,7 @@ app.get('/cosmic-objects/random/:category',(req,res)=>{
     res.json(dataSet[Math.trunc(Math.random() * dataSet.length)])
 })
 
-    // filter by properties and return and array objects that fulfil that condition
+// filter by type property and return and array objects that fulfil that condition
 
 app.get('/cosmic-objects/filter/:category', (req, res) => {
     const category = req.params.category.toLowerCase();
